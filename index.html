@@ -4,323 +4,293 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Peluquería Loli — Espinosa de los Monteros</title>
-  <meta name="description" content="Peluquería Loli en Espinosa de los Monteros, Burgos. Cortes, tintes, mechas, permanentes. Llama: 947 143 615." />
+  <meta name="description" content="Peluquería Loli. Cortes, tintes, mechas, permanentes. Espinosa de los Monteros, Burgos. 947 143 615." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
-  <!-- ══ PHONE BAR ══ -->
-  <div class="phonebar">
-    <div class="phonebar__inner">
-      <span class="phonebar__label">LLAMA AHORA &rarr;</span>
-      <a href="tel:947143615" class="phonebar__number">947 143 615</a>
-      <span class="phonebar__sep">|</span>
-      <span class="phonebar__loc">Pl. Sancho García 35 · Espinosa de los Monteros, Burgos</span>
-      <span class="phonebar__sep">|</span>
-      <span class="phonebar__rating">★ 4,6 Google</span>
+  <!-- LLAMANOS -->
+  <div class="callbar">
+    <div class="callbar__wrap">
+      <span>Llama y pide cita —</span>
+      <a href="tel:947143615">947 143 615</a>
+      <span class="callbar__dot"></span>
+      <span>Espinosa de los Monteros, Burgos</span>
+      <span class="callbar__dot"></span>
+      <span>★ 4,6 en Google</span>
     </div>
   </div>
 
-  <!-- ══ HEADER (image bg) ══ -->
-  <header class="header" id="header">
-    <div class="header__bg">
-      <img src="images/salon2.jpg" alt="" aria-hidden="true" class="header__bgimg" />
-      <div class="header__bgoverlay"></div>
-    </div>
-    <div class="header__inner">
-      <a href="#inicio" class="logo">
-        <span class="logo__top">Peluquería</span>
-        <span class="logo__main">Loli</span>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#inicio" class="nav__logo">
+        <em>Peluquería</em> Loli
       </a>
-      <nav class="nav" id="nav">
-        <a href="#precios" class="nav__link">Precios</a>
-        <a href="#trabajos" class="nav__link">Trabajos</a>
-        <a href="#galeria" class="nav__link">Galería</a>
-        <a href="#nosotras" class="nav__link">Nosotras</a>
-        <a href="#contacto" class="nav__link">Contacto</a>
-        <a href="tel:947143615" class="nav__call">947 143 615</a>
-      </nav>
-      <button class="nav__toggle" id="navToggle" aria-label="Menú">
+      <div class="nav__links" id="navLinks">
+        <a href="#precios">Precios</a>
+        <a href="#trabajos">Trabajos</a>
+        <a href="#salon">El salón</a>
+        <a href="#nosotras">Nosotras</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <a href="tel:947143615" class="nav__tel">947 143 615</a>
+      <button class="nav__burger" id="burger" aria-label="Menú">
         <span></span><span></span><span></span>
       </button>
     </div>
-  </header>
+  </nav>
 
-  <!-- ══ HERO ══ -->
+  <!-- HERO -->
   <section class="hero" id="inicio">
-    <div class="hero__bg">
-      <img src="images/salon1.jpg" alt="Peluquería Loli interior" class="hero__bgimg" />
-      <div class="hero__overlay"></div>
+    <div class="hero__img-wrap">
+      <img src="images/salon2.jpg" alt="Peluquería Loli" class="hero__img" />
     </div>
-    <div class="hero__content">
-      <p class="hero__kicker">Espinosa de los Monteros · Desde siempre</p>
-      <h1 class="hero__title">Tu pelo.<br><em>Tus reglas.</em></h1>
-      <p class="hero__sub">Cortes, color y tratamientos con criterio propio.<br>Sin rodeos. Con resultados.</p>
-      <div class="hero__ctas">
-        <a href="tel:947143615" class="cta-btn cta-btn--red">Pedir cita &rarr; 947 143 615</a>
-        <a href="#precios" class="cta-btn cta-btn--ghost">Ver precios</a>
-      </div>
+    <div class="hero__box">
+      <p class="hero__eyebrow">Espinosa de los Monteros · Burgos</p>
+      <h1 class="hero__h1">
+        <span>Peluquería</span>
+        <em>Loli.</em>
+      </h1>
+      <p class="hero__tagline">Cortes, color y carácter.<br>Llevamos años haciéndolo bien.</p>
+      <a href="tel:947143615" class="pill-btn">Llamar → 947 143 615</a>
     </div>
-    <div class="hero__scroll-hint">↓</div>
+    <div class="hero__scroll">↓ sigue bajando</div>
   </section>
 
-  <!-- ══ PRECIOS ══ -->
-  <section class="prices" id="precios">
-    <div class="prices__header">
-      <span class="label-tag">PRECIOS</span>
-      <h2 class="block-title">Lo que cuesta.<br>Sin sorpresas.</h2>
+  <!-- PRECIOS -->
+  <section class="precios" id="precios">
+    <div class="precios__wrap">
+      <div class="precios__left">
+        <p class="section-tag">Precios</p>
+        <h2 class="h2">Lo que<br><em>cuesta.</em></h2>
+        <p class="precios__note">Precios orientativos.<br>Consulta sin compromiso:<br><a href="tel:947143615">947 143 615</a></p>
+      </div>
+      <div class="precios__right">
+        <div class="precio-row">
+          <span>Corte de pelo</span>
+          <span>desde 15 €</span>
+        </div>
+        <div class="precio-row">
+          <span>Lavado + secado</span>
+          <span>12 €</span>
+        </div>
+        <div class="precio-row">
+          <span>Tinte completo</span>
+          <span>desde 40 €</span>
+        </div>
+        <div class="precio-row">
+          <span>Mechas / balayage</span>
+          <span>desde 55 €</span>
+        </div>
+        <div class="precio-row">
+          <span>Permanente</span>
+          <span>desde 45 €</span>
+        </div>
+        <div class="precio-row">
+          <span>Keratina</span>
+          <span>desde 60 €</span>
+        </div>
+        <div class="precio-row">
+          <span>Recogido / peinado</span>
+          <span>desde 25 €</span>
+        </div>
+        <div class="precio-row">
+          <span>Manicura</span>
+          <span>desde 18 €</span>
+        </div>
+        <div class="precio-row precio-row--cta">
+          <span>¿Dudas?</span>
+          <a href="tel:947143615" class="pill-btn pill-btn--dark">Pregunta →</a>
+        </div>
+      </div>
     </div>
-    <div class="prices__grid">
-      <div class="price-item">
-        <span class="price-item__name">Corte de pelo</span>
-        <span class="price-item__line"></span>
-        <span class="price-item__val">desde 15 €</span>
-      </div>
-      <div class="price-item">
-        <span class="price-item__name">Lavado + secado</span>
-        <span class="price-item__line"></span>
-        <span class="price-item__val">12 €</span>
-      </div>
-      <div class="price-item">
-        <span class="price-item__name">Tinte completo</span>
-        <span class="price-item__line"></span>
-        <span class="price-item__val">desde 40 €</span>
-      </div>
-      <div class="price-item">
-        <span class="price-item__name">Mechas / balayage</span>
-        <span class="price-item__line"></span>
-        <span class="price-item__val">desde 55 €</span>
-      </div>
-      <div class="price-item">
-        <span class="price-item__name">Permanente</span>
-        <span class="price-item__line"></span>
-        <span class="price-item__val">desde 45 €</span>
-      </div>
-      <div class="price-item">
-        <span class="price-item__name">Keratina</span>
-        <span class="price-item__line"></span>
-        <span class="price-item__val">desde 60 €</span>
-      </div>
-      <div class="price-item">
-        <span class="price-item__name">Recogido / peinado</span>
-        <span class="price-item__line"></span>
-        <span class="price-item__val">desde 25 €</span>
-      </div>
-      <div class="price-item">
-        <span class="price-item__name">Manicura</span>
-        <span class="price-item__line"></span>
-        <span class="price-item__val">desde 18 €</span>
-      </div>
-    </div>
-    <p class="prices__note">* Precios orientativos. Consulta sin compromiso → <a href="tel:947143615">947 143 615</a></p>
   </section>
 
-  <!-- ══ SERVICIOS (lista horizontal) ══ -->
-  <div class="services-band">
-    <div class="services-band__inner">
-      <span>CORTE</span>
-      <span class="sep">·</span>
-      <span>TINTE</span>
-      <span class="sep">·</span>
-      <span>MECHAS</span>
-      <span class="sep">·</span>
-      <span>BALAYAGE</span>
-      <span class="sep">·</span>
-      <span>PERMANENTE</span>
-      <span class="sep">·</span>
-      <span>KERATINA</span>
-      <span class="sep">·</span>
-      <span>RECOGIDOS</span>
-      <span class="sep">·</span>
-      <span>MANICURA</span>
-      <span class="sep">·</span>
-      <span>TRATAMIENTOS</span>
+  <!-- SERVICIOS TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>Corte</span><span class="dot">·</span>
+      <span>Tinte</span><span class="dot">·</span>
+      <span>Mechas</span><span class="dot">·</span>
+      <span>Balayage</span><span class="dot">·</span>
+      <span>Permanente</span><span class="dot">·</span>
+      <span>Keratina</span><span class="dot">·</span>
+      <span>Recogidos</span><span class="dot">·</span>
+      <span>Manicura</span><span class="dot">·</span>
+      <span>Tratamientos</span><span class="dot">·</span>
+      <span>Corte</span><span class="dot">·</span>
+      <span>Tinte</span><span class="dot">·</span>
+      <span>Mechas</span><span class="dot">·</span>
+      <span>Balayage</span><span class="dot">·</span>
+      <span>Permanente</span><span class="dot">·</span>
+      <span>Keratina</span><span class="dot">·</span>
+      <span>Recogidos</span><span class="dot">·</span>
+      <span>Manicura</span><span class="dot">·</span>
+      <span>Tratamientos</span><span class="dot">·</span>
     </div>
   </div>
 
-  <!-- ══ TRABAJOS REALIZADOS ══ -->
+  <!-- TRABAJOS -->
   <section class="trabajos" id="trabajos">
     <div class="trabajos__header">
-      <span class="label-tag label-tag--light">TRABAJOS REALIZADOS</span>
-      <h2 class="block-title block-title--light">Esto es lo que<br><em>hacemos.</em></h2>
-      <p class="block-desc block-desc--light">Una selección de trabajos reales de nuestras clientas. Sin filtros, sin trampa.</p>
+      <p class="section-tag section-tag--light">Trabajos realizados</p>
+      <h2 class="h2 h2--light">Esto es lo que<br><em>hacemos.</em></h2>
+      <p class="trabajos__sub">Resultados reales de nuestras clientas. Sin retoques exagerados.</p>
     </div>
-    <div class="trabajos__masonry">
-      <div class="trabajo-item trabajo-item--tall">
-        <img src="images/trabajo1.jpg" alt="Trabajo realizado 1" loading="lazy" />
-        <div class="trabajo-item__label">Tinte + corte</div>
+    <div class="trabajos__grid">
+      <div class="trab trab--tall">
+        <img src="images/trabajo1.jpg" alt="Trabajo 1" loading="lazy" />
+        <span>Tinte + corte</span>
       </div>
-      <div class="trabajo-item">
-        <img src="images/trabajo2.jpg" alt="Trabajo realizado 2" loading="lazy" />
-        <div class="trabajo-item__label">Mechas naturales</div>
+      <div class="trab">
+        <img src="images/trabajo2.jpg" alt="Trabajo 2" loading="lazy" />
+        <span>Mechas naturales</span>
       </div>
-      <div class="trabajo-item">
-        <img src="images/trabajo3.jpg" alt="Trabajo realizado 3" loading="lazy" />
-        <div class="trabajo-item__label">Balayage</div>
+      <div class="trab">
+        <img src="images/trabajo3.jpg" alt="Trabajo 3" loading="lazy" />
+        <span>Balayage</span>
       </div>
-      <div class="trabajo-item trabajo-item--wide">
-        <img src="images/trabajo4.jpg" alt="Trabajo realizado 4" loading="lazy" />
-        <div class="trabajo-item__label">Recogido</div>
+      <div class="trab trab--wide">
+        <img src="images/trabajo4.jpg" alt="Trabajo 4" loading="lazy" />
+        <span>Recogido de novia</span>
       </div>
-      <div class="trabajo-item">
-        <img src="images/trabajo5.jpg" alt="Trabajo realizado 5" loading="lazy" />
-        <div class="trabajo-item__label">Permanente</div>
+      <div class="trab">
+        <img src="images/trabajo5.jpg" alt="Trabajo 5" loading="lazy" />
+        <span>Permanente</span>
       </div>
-      <div class="trabajo-item">
-        <img src="images/trabajo6.jpg" alt="Trabajo realizado 6" loading="lazy" />
-        <div class="trabajo-item__label">Color completo</div>
+      <div class="trab">
+        <img src="images/trabajo6.jpg" alt="Trabajo 6" loading="lazy" />
+        <span>Color completo</span>
       </div>
     </div>
-    <div class="trabajos__cta">
-      <a href="tel:947143615" class="cta-btn cta-btn--red">¿Quieres este resultado? Llama ahora</a>
+    <div class="trabajos__footer">
+      <a href="tel:947143615" class="pill-btn">¿Quieres este resultado? Llama ahora</a>
     </div>
   </section>
 
-  <!-- ══ GALLERY (salón) ══ -->
-  <section class="galeria" id="galeria">
-    <div class="galeria__header">
-      <span class="label-tag">EL SALÓN</span>
-      <h2 class="block-title">Así es<br>por dentro.</h2>
+  <!-- SALÓN (galería) -->
+  <section class="salon" id="salon">
+    <div class="salon__header">
+      <p class="section-tag">El salón</p>
+      <h2 class="h2">Por dentro<br><em>así.</em></h2>
     </div>
-    <div class="galeria__grid">
-      <div class="galeria__item galeria__item--big">
+    <div class="salon__grid">
+      <div class="salon-img salon-img--main">
         <img src="images/salon2.jpg" alt="Zona de estilismo" loading="lazy" />
       </div>
-      <div class="galeria__item">
+      <div class="salon-img">
         <img src="images/salon1.jpg" alt="Zona de espera" loading="lazy" />
       </div>
-      <div class="galeria__item">
-        <img src="images/salon3.jpg" alt="Detalle salón" loading="lazy" />
+      <div class="salon-img">
+        <img src="images/salon3.jpg" alt="Arte en el salón" loading="lazy" />
       </div>
-      <div class="galeria__item">
+      <div class="salon-img">
         <img src="images/salon5.jpg" alt="Zona de lavado" loading="lazy" />
       </div>
-      <div class="galeria__item">
+      <div class="salon-img">
         <img src="images/salon4.jpg" alt="Detalles" loading="lazy" />
       </div>
     </div>
   </section>
 
-  <!-- ══ NOSOTRAS ══ -->
+  <!-- NOSOTRAS -->
   <section class="nosotras" id="nosotras">
-    <div class="nosotras__img-col">
-      <img src="images/salon3.jpg" alt="Peluquería Loli" />
+    <div class="nosotras__photo">
+      <img src="images/salon5.jpg" alt="Peluquería Loli interior" loading="lazy" />
     </div>
-    <div class="nosotras__text-col">
-      <span class="label-tag label-tag--light">NOSOTRAS</span>
-      <h2 class="block-title block-title--light">Llevamos años<br>haciéndolo bien.</h2>
-      <p>Somos una peluquería de toda la vida en Espinosa de los Monteros. Sin pretensiones, pero con mucho criterio. Aquí se trabaja bien, se escucha a la clienta y se da un consejo honesto.</p>
-      <p>El ambiente es cercano, familiar. Casi todo el que entra ya conoce a alguien. Y si no, en cinco minutos parece que llevas años viniendo.</p>
-      <div class="nosotras__stats">
-        <div class="stat">
-          <span class="stat__num">4,6</span>
-          <span class="stat__label">en Google</span>
+    <div class="nosotras__text">
+      <p class="section-tag section-tag--light">Nosotras</p>
+      <h2 class="h2 h2--light">Sin rodeos.<br><em>Con resultado.</em></h2>
+      <p>Somos una peluquería de toda la vida en Espinosa de los Monteros. Aquí no hay humo: se trabaja bien, se escucha a la clienta y si algo no te va a quedar bien, te lo decimos antes.</p>
+      <p>El ambiente es el que es — familiar, cercano. Casi todo el que entra ya conoce a alguien. Y si no, en cinco minutos parece que llevas años viniendo.</p>
+
+      <div class="nosotras__nums">
+        <div>
+          <strong>4,6</strong>
+          <span>valoración en Google</span>
         </div>
-        <div class="stat">
-          <span class="stat__num">19</span>
-          <span class="stat__label">reseñas</span>
-        </div>
-        <div class="stat">
-          <span class="stat__num">★★★★★</span>
-          <span class="stat__label">valoración media</span>
+        <div>
+          <strong>19</strong>
+          <span>reseñas</span>
         </div>
       </div>
+
       <blockquote>
-        "El ambiente es acogedor, familiar. Hacen un buen trabajo y dan buenos consejos."
-        <cite>— Clienta habitual · Google</cite>
+        "El ambiente es familiar. Hacen un buen trabajo y dan buenos consejos. Siempre vuelvo."
+        <cite>— Clienta habitual</cite>
       </blockquote>
     </div>
   </section>
 
-  <!-- ══ RESEÑAS ══ -->
+  <!-- RESEÑAS -->
   <section class="resenas">
-    <div class="resenas__inner">
-      <span class="label-tag">LO QUE DICEN</span>
-      <div class="resenas__grid">
+    <div class="resenas__wrap">
+      <p class="section-tag">Reseñas reales</p>
+      <div class="resenas__list">
         <div class="resena">
-          <div class="resena__stars">★★★★★</div>
-          <p>"El ambiente es acogedor y familiar. Hacen un buen trabajo y dan buenos consejos. Y siempre vuelvo."</p>
-          <cite>— María · hace 6 años</cite>
+          <div class="resena__estrellas">★★★★★</div>
+          <p>"El ambiente es acogedor y familiar. Casi todo el que entra conoce a todos. Hacen un buen trabajo y dan buenos consejos. Y siempre vuelvo."</p>
+          <cite>María — hace 6 años</cite>
         </div>
         <div class="resena">
-          <div class="resena__stars">★★★★★</div>
+          <div class="resena__estrellas">★★★★★</div>
           <p>"Ambiente agradable y amigable, con buena atención y asesoramiento. Muy contenta con el resultado."</p>
-          <cite>— Ana · hace un año</cite>
+          <cite>Ana — hace un año</cite>
         </div>
         <div class="resena">
-          <div class="resena__stars">★★★★★</div>
-          <p>"Profesionales de verdad. El trato es cercano y los resultados siempre son geniales. Las recomiendo."</p>
-          <cite>— Laura · Google</cite>
+          <div class="resena__estrellas">★★★★★</div>
+          <p>"Profesionales de verdad. El trato es cercano y los resultados siempre son geniales. Las recomiendo sin dudarlo."</p>
+          <cite>Laura — Google</cite>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ══ CONTACTO ══ -->
+  <!-- CONTACTO -->
   <section class="contacto" id="contacto">
-    <div class="contacto__left">
-      <span class="label-tag label-tag--light">CONTACTO</span>
-      <h2 class="block-title block-title--light">Pide tu cita.<br>Es fácil.</h2>
+    <div class="contacto__info">
+      <p class="section-tag section-tag--light">Contacto</p>
+      <h2 class="h2 h2--light">Pide tu<br><em>cita.</em></h2>
 
-      <div class="contacto__dato">
-        <span class="contacto__dato-label">TELÉFONO</span>
-        <a href="tel:947143615" class="contacto__dato-val contacto__dato-val--big">947 143 615</a>
-      </div>
-      <div class="contacto__dato">
-        <span class="contacto__dato-label">DIRECCIÓN</span>
-        <span class="contacto__dato-val">Pl. Sancho García, 35<br>09560 Espinosa de los Monteros, Burgos</span>
-      </div>
-      <div class="contacto__dato">
-        <span class="contacto__dato-label">HORARIO</span>
-        <span class="contacto__dato-val">Lun – Sáb: consultar por teléfono<br>Cita previa recomendada</span>
+      <a href="tel:947143615" class="contacto__tel">947 143 615</a>
+
+      <div class="contacto__detalles">
+        <div>
+          <strong>Dirección</strong>
+          <span>Pl. Sancho García, 35<br>09560 Espinosa de los Monteros, Burgos</span>
+        </div>
+        <div>
+          <strong>Horario</strong>
+          <span>Lun – Sáb<br>Consulta por teléfono</span>
+        </div>
       </div>
 
-      <a href="tel:947143615" class="cta-btn cta-btn--white">Llamar ahora: 947 143 615</a>
+      <a href="tel:947143615" class="pill-btn pill-btn--cream">Llamar ahora →</a>
     </div>
-    <div class="contacto__map">
+    <div class="contacto__mapa">
       <iframe
         title="Ubicación Peluquería Loli"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1244.5!2d-3.5517!3d43.0764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd45b30f5bda6789%3A0x0!2zUGwuIFNhbmNobyBHYXJjw61hLCAzNSwgMDk1NjAgRXNwaW5vc2EgZGUgbG9zIE1vbnRlcm9z!5e0!3m2!1ses!2ses!4v1712600000000"
-        width="100%"
-        height="100%"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
+        width="100%" height="100%"
+        style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </div>
   </section>
 
-  <!-- ══ FOOTER ══ -->
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer__inner">
-      <div class="footer__logo">
-        <span class="logo__top">Peluquería</span>
-        <span class="logo__main">Loli</span>
-      </div>
-      <div class="footer__cols">
-        <div>
-          <strong>Menú</strong>
-          <a href="#precios">Precios</a>
-          <a href="#trabajos">Trabajos</a>
-          <a href="#galeria">Galería</a>
-          <a href="#nosotras">Nosotras</a>
-          <a href="#contacto">Contacto</a>
-        </div>
-        <div>
-          <strong>Contacto</strong>
-          <a href="tel:947143615">947 143 615</a>
-          <span>Pl. Sancho García, 35</span>
-          <span>Espinosa de los Monteros</span>
-          <span>09560 Burgos</span>
-        </div>
-      </div>
+    <div class="footer__top">
+      <div class="footer__logo"><em>Peluquería</em> Loli</div>
+      <a href="tel:947143615" class="footer__tel">947 143 615</a>
     </div>
     <div class="footer__bottom">
-      &copy; 2025 Peluquería Loli · Todos los derechos reservados
+      <span>Pl. Sancho García, 35 · Espinosa de los Monteros · Burgos</span>
+      <span>© 2025 Peluquería Loli</span>
     </div>
   </footer>
 
