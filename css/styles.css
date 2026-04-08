@@ -647,21 +647,21 @@ a { text-decoration: none; color: inherit; }
   .trabajos__grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    overflow: hidden;
-    max-height: 496px; /* 2 × 240px + 2 × 8px gap */
-    transition: max-height 0.5s ease;
   }
-  .trabajos__grid.is-open { max-height: 1600px; }
   .trab { height: 240px; }
   .trab--wide { grid-column: unset; }
 
-  /* Toggle button — nur mobil sichtbar */
+  /* Nur die ersten 2 sichtbar — Rest versteckt */
+  .trab:nth-child(n+3) { display: none; }
+  .trabajos__grid.is-open .trab:nth-child(n+3) { display: block; }
+
+  /* Toggle-Button nur auf Mobil */
   .trabajos__toggle {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin-top: 16px;
+    margin-top: 6px;
     padding: 14px 20px;
     background: rgba(255,255,255,0.06);
     border: 1px solid rgba(255,255,255,0.12);
