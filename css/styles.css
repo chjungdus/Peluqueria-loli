@@ -172,10 +172,10 @@ a { text-decoration: none; color: inherit; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(100%) brightness(0.92);
+  filter: grayscale(40%) brightness(0.92);
   transition: filter 0.6s ease;
 }
-.hero__visual:hover img { filter: grayscale(80%) brightness(0.95); }
+.hero__visual:hover img { filter: grayscale(15%) brightness(0.97); }
 
 /* Rechte Seite: Text */
 .hero__text {
@@ -357,10 +357,10 @@ a { text-decoration: none; color: inherit; }
 .trab img {
   width: 100%; height: 100%;
   object-fit: cover;
-  filter: grayscale(100%) brightness(0.75);
+  filter: grayscale(30%) brightness(0.78);
   transition: filter 0.5s ease, transform 0.5s ease;
 }
-.trab:hover img { filter: grayscale(40%) brightness(0.9); transform: scale(1.04); }
+.trab:hover img { filter: grayscale(0%) brightness(0.95); transform: scale(1.04); }
 .trab__caption {
   position: absolute;
   bottom: 0; left: 0; right: 0;
@@ -380,6 +380,7 @@ a { text-decoration: none; color: inherit; }
   max-width: var(--max);
   margin: 44px auto 0;
 }
+.trabajos__toggle { display: none; } /* nur mobil via @media */
 
 /* ────────────────────────────
    SALON FOTOS
@@ -404,10 +405,10 @@ a { text-decoration: none; color: inherit; }
 .salon-img img {
   width: 100%; height: 100%;
   object-fit: cover;
-  filter: grayscale(100%) brightness(0.88);
+  filter: grayscale(35%) brightness(0.88);
   transition: filter 0.5s ease, transform 0.5s ease;
 }
-.salon-img:hover img { filter: grayscale(60%) brightness(0.95); transform: scale(1.03); }
+.salon-img:hover img { filter: grayscale(0%) brightness(0.97); transform: scale(1.03); }
 
 /* ────────────────────────────
    NOSOTRAS
@@ -421,7 +422,7 @@ a { text-decoration: none; color: inherit; }
 .nosotras__photo img {
   width: 100%; height: 100%;
   object-fit: cover;
-  filter: grayscale(100%) brightness(0.65);
+  filter: grayscale(30%) brightness(0.65);
 }
 .nosotras__text {
   padding: 88px 72px;
@@ -550,7 +551,7 @@ a { text-decoration: none; color: inherit; }
 .contacto__detalles span { font-size: 15px; color: rgba(255,255,255,0.55); line-height: 1.65; }
 
 .contacto__mapa { overflow: hidden; }
-.contacto__mapa iframe { width: 100%; height: 100%; display: block; filter: grayscale(100%); }
+.contacto__mapa iframe { width: 100%; height: 100%; display: block; filter: grayscale(40%); }
 
 /* ────────────────────────────
    FOOTER
@@ -643,9 +644,43 @@ a { text-decoration: none; color: inherit; }
   .salon { padding: 72px 24px; }
   .resenas { padding: 72px 24px; }
 
-  .trabajos__grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+  .trabajos__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    overflow: hidden;
+    max-height: 496px; /* 2 × 240px + 2 × 8px gap */
+    transition: max-height 0.5s ease;
+  }
+  .trabajos__grid.is-open { max-height: 1600px; }
   .trab { height: 240px; }
   .trab--wide { grid-column: unset; }
+
+  /* Toggle button — nur mobil sichtbar */
+  .trabajos__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 16px;
+    padding: 14px 20px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: var(--w0);
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background var(--tr);
+  }
+  .trabajos__toggle:hover { background: rgba(255,255,255,0.1); }
+  .trabajos__toggle .toggle-icon {
+    font-size: 20px;
+    line-height: 1;
+    transition: transform 0.4s ease;
+  }
+  .trabajos__toggle.is-open .toggle-icon { transform: rotate(45deg); }
 
   .salon__grid { grid-template-columns: 1fr; }
   .salon-img--main,

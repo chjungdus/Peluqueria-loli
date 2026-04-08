@@ -15,3 +15,15 @@ navLinks?.querySelectorAll('a').forEach(a => {
     document.body.style.overflow = '';
   });
 });
+
+// Portfolio toggle (mobile)
+const trabToggle = document.getElementById('trabToggle');
+const trabGrid   = document.querySelector('.trabajos__grid');
+
+trabToggle?.addEventListener('click', () => {
+  const open = trabGrid.classList.toggle('is-open');
+  trabToggle.classList.toggle('is-open', open);
+  trabToggle.setAttribute('aria-expanded', open);
+  trabToggle.querySelector('span:first-child').textContent =
+    open ? 'Ver menos' : 'Ver todos los trabajos';
+});
